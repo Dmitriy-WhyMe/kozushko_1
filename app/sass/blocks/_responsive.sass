@@ -1,0 +1,168 @@
+@mixin flex_column
+    flex-direction: column
+@include iphone5(portrait)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include iphone5(landscape)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include iphone6(portrait)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include iphone6(landscape)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include iphone6-plus(portrait)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include iphone6-plus(landscape)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include ipad(portrait)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include ipad(landscape)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+@include max-screen(1600px)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+            .slider_fourblocks
+                @include flex_column
+                .fourblocks
+                    margin-left: 0px
+                .single-item 
+                    min-width: auto
+                .block_slider_txt
+                    right: 30px
+                    min-width: 400px
+                    margin-left: 0px
+            .popular_state_main
+                @include flex_column
+                .meta_teg
+                    max-width: 100%
+                    margin-right: 0px
+                .popular_state
+                    .block_state
+                        @include flex_column
+                        .block_big, .block_two
+                            margin-right: 0px
+                        .block_big_text
+                            max-width: 100%
+                        .sub_block_big
+                            margin-right: 0px
+            .polezen
+                @include flex_column
+                .left_block
+                    max-width: 100%
+                    margin-right: 0px
+                    .main_button
+                        margin-top: 0px
+                        margin-bottom: 20px
+                    .main_p
+                        max-width: 100%
+                .popular_state
+                    .block_state
+                        flex-wrap: wrap
+                        justify-content: center
+                        .block_big
+                            margin-bottom: 20px
+                            .block_big_text
+                                a
+                                    margin-left: 85%
+            .mockup_block
+                @include flex_column
+                align-items: center
+                .left_img_mockup
+                    img
+                        width: 100%
+                    .poverh_img
+                        margin-top: 20px
+                        margin-left: 20px
+                        p
+                            margin-bottom: 0px;
+                        .main_button
+                            margin-left: 0px
+                            .img_left
+                                max-width: 20px
+
+@include max-screen(1024px)
+    .polezen
+        
+        .left_block
+            
+            .main_p
+                max-width: 100%
+        .popular_state
+            .block_state
+                flex-wrap: wrap
+                .block_big
+                    max-width: 100%
+                    max-height: 100%
+                    margin-right: 0px
+                    .block_big_text
+                        a
+                            margin-left: 85%
