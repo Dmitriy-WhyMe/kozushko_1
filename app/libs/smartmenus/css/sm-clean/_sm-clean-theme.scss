@@ -12,7 +12,7 @@
 // ----------------------------------------------------------
 
 $sm-clean__white:										#fff !default;
-$sm-clean__gray:										darken($sm-clean__white, 6.5%) !default;
+$sm-clean__gray:										#fff !default;
 $sm-clean__gray-dark:									darken($sm-clean__white, 26.5%) !default;
 $sm-clean__gray-darker:									darken($sm-clean__white, 66.5%) !default;
 $sm-clean__red:											#D23600 !default;
@@ -64,7 +64,7 @@ $sm-clean__collapsible-item-padding-horizontal:			20px !default;
 $sm-clean__collapsible-separators-color:				rgba(0, 0, 0, 0.05) !default;
 
 // Toggle button (sub menu indicators)
-$sm-clean__collapsible-toggle-bg:						rgba(255, 255, 255, 0.5) !default;
+$sm-clean__collapsible-toggle-bg:						rgb(255, 255, 255) !default;
 
 
 // ----------------------------------------------------------
@@ -84,7 +84,7 @@ $sm-clean__collapsible-sub-item-indentation:			8px !default;
 
 // Menu box
 $sm-clean__desktop-bg:									$sm-clean__gray !default;
-$sm-clean__desktop-border-radius:						100px !default;
+$sm-clean__desktop-border-radius:						150px !default;
 $sm-clean__desktop-padding-horizontal:					10px !default;
 
 // Items

@@ -1,5 +1,5 @@
 .sm-clean {
-  background: #eeeeee;
+  background: #fff;
   border-radius: 5px;
 }
 .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active {
@@ -126,8 +126,8 @@
   /* ...end */
   .sm-clean {
     padding: 0 10px;
-    background: #eeeeee;
-    border-radius: 100px;
+    background: #fff;
+    border-radius: 150px;
   }
   .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
     padding: 12px 12px;

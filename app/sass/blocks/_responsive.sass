@@ -1,8 +1,30 @@
 @mixin flex_column
     flex-direction: column
+    
 @include iphone5(portrait)
     .page-container    
         .container
+            .slider
+                .slick-list
+                    .slick-track
+                        .slick-slide
+                            .block_slider_txt
+                                right: 0px
+                                left: 10px
+                                padding-right: 120px
+                                .slide_title
+                                    font-size: 12px
+                                p
+                                    font-size: 12px
+            .preimuhestva_left
+                .preimuhestva_blocks
+                    justify-content: center
+                    .preimuhestva_block
+                        text-align: center
+            .preimuhestva_right
+                .main_button
+                    padding-left: 28px
+                    padding-right: 48px
             .vseoboknax
                 @include flex_column
                 .vseoboknax_text
@@ -10,7 +32,65 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+                    a
+                        margin-right: 15px
+            .popular_state_main
+                .meta_teg
+                    .a_meta_teg
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: center
+                    .main_button
+                        padding-left: 98px
+                        padding-right: 118px
+            .fotter_container
+                .left_fotter
+                    .nav_fotter
+                        .flex
+                            @include flex_column
+                            .nav_fotter_block1, .nav_fotter_block2
+                                margin-right: 0px
+                        p
+                            margin-top: 10px
+                    .blog_fotter
+                        margin-right: 0px
+                .right_fotter
+                    @include flex_column
+            .project
+                .multiple-items
+                    .slick-list
+                        .slick-track
+                            .slick-slide   
+                                .block_big
+                                    .block_big_text
+                                        h4
+                                            text-align: center
+                                            margin-top: 0px
+                                            margin-left: 0px
+                                            font-size: 10px
+            .polezen
+                .left_block
+                    .main_button
+                        padding-left: 80px
+                        padding-right: 100px
+            .block_state
+                .block_big
+                    max-height: 100%
+                    .img_a
+                        img
+                            max-width: 100%
+                        a
+                            top: 0
+                .block_two
+                    .sub_block_big
+                        max-height: 100%
+                        .img_a
+                            img
+                                max-width: 100%
+                            a
+                                top: 0
 @include iphone5(landscape)
+    
     .page-container    
         .container
             .vseoboknax
@@ -20,9 +100,34 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+            .preimuhestva
+                .preimuhestva_left
+                    .preimuhestva_blocks
+                        justify-content: center
+                        .preimuhestva_block
+                            text-align: center
 @include iphone6(portrait)
     .page-container    
         .container
+            .slider
+                .slick-list
+                    .slick-track
+                        .slick-slide
+                            .block_slider_txt
+                                right: 0px
+                                left: 10px
+                                padding-right: 50px
+                                .slide_title
+                                    font-size: 14px
+            .preimuhestva_left
+                .preimuhestva_blocks
+                    justify-content: center
+                    .preimuhestva_block
+                        text-align: center
+            .preimuhestva_right
+                .main_button
+                    padding-left: 58px
+                    padding-right: 78px
             .vseoboknax
                 @include flex_column
                 .vseoboknax_text
@@ -30,6 +135,54 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+            .popular_state_main
+                .meta_teg
+                    .main_button
+                        padding-left: 126px
+                        padding-right: 146px
+            .fotter_container
+                .left_fotter
+                    .nav_fotter
+                        .flex
+                            @include flex_column
+                        p
+                            margin-top: 10px
+                    .blog_fotter
+                        margin-right: 0px
+                .right_fotter
+                    @include flex_column
+            .project
+                .multiple-items
+                    .slick-list
+                        .slick-track
+                            .slick-slide   
+                                .block_big
+                                    .block_big_text
+                                        h4
+                                            text-align: center
+                                            margin-top: 0px
+                                            margin-left: 0px
+            .polezen
+                .left_block
+                    .main_button
+                        padding-left: 107px
+                        padding-right: 127px
+            .block_state
+                .block_big
+                    max-height: 100%
+                    .img_a
+                        img
+                            max-width: 100%
+                        a
+                            top: 0
+                .block_two
+                    .sub_block_big
+                        max-height: 100%
+                        .img_a
+                            img
+                                max-width: 100%
+                            a
+                                top: 0
 @include iphone6(landscape)
     .page-container    
         .container
@@ -40,9 +193,20 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+            
 @include iphone6-plus(portrait)
     .page-container    
         .container
+            .slider
+                .slick-list
+                    .slick-track
+                        .slick-slide
+                            .block_slider_txt
+                                right: 0px
+                                left: 10px
+                                padding-right: 50px
+                                .slide_title
+                                    font-size: 18px
             .vseoboknax
                 @include flex_column
                 .vseoboknax_text
@@ -50,6 +214,53 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+            .fotter_container
+                .left_fotter
+                    .nav_fotter
+                        .flex
+                            @include flex_column
+                        p
+                            margin-top: 10px
+                    .blog_fotter
+                        margin-right: 0px
+                .right_fotter
+                    @include flex_column
+            .project
+                .multiple-items
+                    .slick-list
+                        .slick-track
+                            .slick-slide   
+                                .block_big
+                                    .block_big_text
+                                        h4
+                                            text-align: center
+                                            margin-top: 0px
+                                            margin-left: 0px
+            .block_state
+                .block_big
+                    max-height: 100%
+                    .img_a
+                        img
+                            max-width: 100%
+                        a
+                            top: 0
+                .block_two
+                    .sub_block_big
+                        max-height: 100%
+                        .img_a
+                            img
+                                max-width: 100%
+                            a
+                                top: 0
+            .preimuhestva_left
+                .preimuhestva_blocks
+                    justify-content: center
+                    .preimuhestva_block
+                        text-align: center
+            .preimuhestva_right
+                .main_button
+                    padding-left: 78px
+                    padding-right: 98px
 @include iphone6-plus(landscape)
     .page-container    
         .container
@@ -70,6 +281,22 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+            .block_state
+                .block_big
+                    max-height: 100%
+                    .img_a
+                        img
+                            max-width: 100%
+                        a
+                            top: 0
+                .block_two
+                    .sub_block_big
+                        max-height: 100%
+                        .img_a
+                            img
+                                max-width: 100%
+                            a
+                                top: 0
 @include ipad(landscape)
     .page-container    
         .container
@@ -80,6 +307,60 @@
                 .vseoboknax_media
                     margin-top: 20px
                     padding-left: 10px
+@include ipad-retina(portrait)
+    .page-container    
+        .container
+            .vseoboknax
+                @include flex_column
+                .vseoboknax_text
+                    padding-left: 10px
+                .vseoboknax_media
+                    margin-top: 20px
+                    padding-left: 10px
+            .block_state
+                .block_big
+                    max-height: 100%
+                    .img_a
+                        img
+                            max-width: 100%
+                        a
+                            top: 0
+                .block_two
+                    .sub_block_big
+                        max-height: 100%
+                        .img_a
+                            img
+                                max-width: 100%
+                            a
+                                top: 0
+@include max-screen(835px)
+    .mockup_block
+        .left_img_mockup
+            .poverh_img
+                .main_h1
+                    font-size: 20px
+    .sertivicate_slider
+        .left_sertivicate_slider
+            .slider_sovmest
+                img
+                    max-height: 370px
+                    max-width: 300px
+                .slider_sovmest_text
+                    margin-left: 10px
+                    .main_h1
+                        font-size: 20px
+            .buttons_slider  
+        .slider-nav
+            display: none
+            .slick-list
+                .slick-track
+                    .slick-slide
+                        max-width: 110px
+                        max-height: 170px
+                        
+                        img
+                            max-width: 80px
+                            max-height: 130px
 @include max-screen(1600px)
     .page-container    
         .container
@@ -133,6 +414,42 @@
                             .block_big_text
                                 a
                                     margin-left: 85%
+            .project
+                @include flex_column
+                .left_block_project
+                    margin-bottom: 30px
+                    .buttons_slider
+                        padding-left: 0px
+            .partners
+                .partners_blocks
+                    justify-content: center
+                    flex-wrap: wrap
+                    a
+                        margin-bottom: 10px
+            .sertivicate_slider
+                .left_sertivicate_slider
+                    .buttons_slider
+                        margin-top: 10px
+                        margin-left: 0px
+                .slider-nav
+                    margin-top: 20px
+                    margin-left: 0px
+                    .slick-list
+                        .slick-track
+                            .slick-slide
+                                margin-right: 10px
+                                
+                                img
+                                    max-width: 140px
+                                    max-height: 190px
+            .free_konsult
+                @include flex_column
+                align-items: center
+                .left_img_free_konsult
+                    img
+                        width: 100%   
+                .right_txt_free_konsult
+                    margin-left: 0px       
             .mockup_block
                 @include flex_column
                 align-items: center
@@ -143,17 +460,29 @@
                         margin-top: 20px
                         margin-left: 20px
                         p
-                            margin-bottom: 0px;
+                            margin-bottom: 0px
                         .main_button
                             margin-left: 0px
                             .img_left
                                 max-width: 20px
 
 @include max-screen(1024px)
+    .preimuhestva
+        @include flex_column
+        .preimuhestva_left
+            .preimuhestva_blocks
+                justify-content: space-between
+                flex-wrap: wrap
+                .preimuhestva_block
+                    margin-right: 0px
+        .preimuhestva_right
+            .main_h1
+                max-width: 100%
+                margin-bottom: 20px
+            .main_p
+                max-width: 100%
     .polezen
-        
         .left_block
-            
             .main_p
                 max-width: 100%
         .popular_state
@@ -166,3 +495,20 @@
                     .block_big_text
                         a
                             margin-left: 85%
+    .fotter_container
+        @include flex_column
+        .right_fotter
+            display: flex
+            justify-content: space-around
+            .meta_fotter
+                margin-top: 0px
+
+
+@include max-screen(595px)
+    .mockup_block
+        .right_txt_mockup
+            margin-top: 50px
+@include max-screen(465px)
+        .mockup_block
+            .right_txt_mockup
+                margin-top: 100px
