@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 var path = {
 	app: {
 		pug: './app/pug/**/*.pug',
-		html: './app/',
+		html: './app/pages/',
 		sass: './app/sass/**/*.sass',
 		css: './app/css/',
 		gulpfile: './gulpfile.js',

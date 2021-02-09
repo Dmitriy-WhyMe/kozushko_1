@@ -1,7 +1,8 @@
 .header
     display: flex
-    padding-top: 28px
-    padding-bottom: 28px
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px
     .logo
         margin-right: 13px
     .logo_text
@@ -25,9 +26,122 @@
                 font-size: 14px
                 line-height: 16px
                 color: #314A60
-   
     .call
         display: flex
         flex-direction: column
+        .main_button
+            padding-left: 13px
+            padding-right: 13px
 
-  
+.main-menu-btn 
+    float: right
+    margin: 6px 10px
+    position: relative
+    display: inline-block
+    width: 29px
+    height: 29px
+    text-indent: 29px
+    white-space: nowrap
+    overflow: hidden
+    cursor: pointer
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+/* hamburger icon */
+#main-menu-state
+    display: none
+@include min-screen(320px)
+    .menu
+        .main-nav
+            +flex(row-reverse, between, center, wrap)
+            position: relative
+            flex-direction: row-reverse
+            align-items: center
+            padding: 0 12px 0 0
+            width: 100%
+            border-radius: 4px 0 0 4px
+            background: white
+            +trs
+            #main-menu
+                padding: 0
+                position: absolute
+                left: 0
+                top: 100%
+                width: 100%
+                border-radius: 0
+                ul
+                    margin: 0
+                    padding: 0
+                    border-radius: 0
+                    border: none
+                    background: none
+                    box-shadow: none
+                    line-height: 1
+                    opacity: 1
+                    margin-left: 0px
+                    &:before,
+                    &:after
+                        display: none
+@include min-screen(1200px)
+    .menu
+        .main-nav
+            padding: 0
+            +flex(row, between, null, wrap)
+            #main-menu
+                +flex(row, null, center, wrap)
+                margin: 0
+                padding: 0
+                border-radius: 0
+                border: none
+                background: none
+                box-shadow: none
+                width: auto
+                position: static
+                li
+                    a
+                        &:hover
+                            color: #314A60
+                    ul
+                        background: #FFFFFF
+                        border-bottom: 1px solid #E8EEF2
+                        box-sizing: border-box
+                        border-radius: 15px
+                        
+                    &:hover
+                        border-bottom: 3px solid red
+                        
+                    
+                        
+@include max-screen(1200px)
+    .main-menu-btn-icon,
+    .main-menu-btn-icon:before,
+    .main-menu-btn-icon:after
+        display: block
+        position: absolute
+        top: 50%
+        left: 2px
+        height: 2px
+        width: 24px
+        background: #555
+        -webkit-transition: all 0.25s
+        transition: all 0.25s
+    .main-menu-btn-icon:before
+        content: ''
+        top: -7px
+        left: 0
+    .main-menu-btn-icon:after
+        content: ''
+        top: 7px
+        left: 0
+    #main-menu-state:not(:checked) ~ #main-menu
+        display: none
+    #main-menu-state:checked ~ #main-menu
+        display: block
+        width: 100%
+        min-width: 160px
+        background: white
+@include max-screen(1920px)
+    #main-menu
+        li
+            .sub-arrow
+                display: none
+            .sub_menu
+                left: -40px
