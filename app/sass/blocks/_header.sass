@@ -1,7 +1,7 @@
 .header
     display: flex
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between
+    align-items: center
     padding-bottom: 10px
     .logo
         margin-right: 13px
@@ -48,6 +48,13 @@
 /* hamburger icon */
 #main-menu-state
     display: none
+.menu 
+    .main-nav 
+        #main-menu 
+            li 
+                ul
+                    transform: translate(-50%, 0)
+                    left: 50% !important
 @include min-screen(320px)
     .menu
         .main-nav

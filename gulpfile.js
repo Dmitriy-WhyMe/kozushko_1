@@ -25,6 +25,8 @@ var path = {
 	}
 }
 
+
+
 // Compile pug to html
 gulp.task('pug', function() {
 	return gulp.src(path.app.pug)
