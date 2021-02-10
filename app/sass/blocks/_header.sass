@@ -1,37 +1,51 @@
 .header
     display: flex
-    justify-content: space-between
     align-items: center
     padding-bottom: 10px
     .logo
         margin-right: 13px
     .logo_text
+        margin-right: 160px
         margin-top: 5px
-        .logo_text_up
-            font-family: Gilroy
-            font-style: normal
-            font-weight: 800
-            font-size: 26px
-            line-height: 32px
-            color: #314A60
-        .logo_text_email
-            display: flex
-            margin-top: 10px
-            a
-                margin-right: 13px
-            p
-                font-family: Gilroy
-                font-style: normal
-                font-weight: 500
-                font-size: 14px
-                line-height: 16px
-                color: #314A60
-    .call
-        display: flex
-        flex-direction: column
-        .main_button
-            padding-left: 13px
-            padding-right: 13px
+.logo_text_up
+    font-family: Gilroy
+    font-style: normal
+    font-weight: 800
+    font-size: 26px
+    line-height: 32px
+    color: #314A60
+.logo_text_email
+    display: flex
+    margin-top: 10px
+    a
+        margin-right: 13px
+    p
+        font-family: Gilroy
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        color: #314A60
+.menu
+    margin-right: 157px
+.search
+    margin-left: 0px
+    display: flex
+    align-items: center
+    input
+        padding-left: 20px
+.call
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -20px
+    .main_button
+        padding-left: 13px
+        padding-right: 13px
+    a
+        color: #93AAC0
+        margin-top: 5px
+        text-decoration: underline
 
 .main-menu-btn 
     float: right
@@ -48,75 +62,113 @@
 /* hamburger icon */
 #main-menu-state
     display: none
-.menu 
-    .main-nav 
-        #main-menu 
-            li 
-                ul
-                    transform: translate(-50%, 0)
-                    left: 50% !important
+#main-menu 
+    li 
+        ul
+            transform: translate(-50%, 0)
+            left: 50% !important
+
 @include min-screen(320px)
-    .menu
-        .main-nav
-            +flex(row-reverse, between, center, wrap)
-            position: relative
-            flex-direction: row-reverse
-            align-items: center
-            padding: 0 12px 0 0
-            width: 100%
-            border-radius: 4px 0 0 4px
-            background: white
-            +trs
-            #main-menu
-                padding: 0
-                position: absolute
-                left: 0
-                top: 100%
-                width: 100%
-                border-radius: 0
-                ul
-                    margin: 0
-                    padding: 0
-                    border-radius: 0
-                    border: none
-                    background: none
-                    box-shadow: none
-                    line-height: 1
-                    opacity: 1
-                    margin-left: 0px
-                    &:before,
-                    &:after
-                        display: none
-@include min-screen(1200px)
-    .menu
-        .main-nav
+.main-nav
+    +flex(row-reverse, between, center, wrap)
+    position: relative
+    flex-direction: row-reverse
+    align-items: center
+    padding: 0 12px 0 0
+    width: 100%
+    border-radius: 4px 0 0 4px
+    background: white
+    +trs
+    #main-menu
+        padding: 0
+        position: absolute
+        left: 0
+        top: 100%
+        width: 100%
+        border-radius: 0
+        ul
+            margin: 0
             padding: 0
-            +flex(row, between, null, wrap)
-            #main-menu
-                +flex(row, null, center, wrap)
-                margin: 0
-                padding: 0
-                border-radius: 0
-                border: none
-                background: none
-                box-shadow: none
-                width: auto
-                position: static
-                li
+            border-radius: 0
+            border: none
+            background: none
+            box-shadow: none
+            line-height: 1
+            opacity: 1
+            margin-left: 0px
+            &:before,
+            &:after
+                display: none
+@include max-screen(1600px)
+    .header
+        justify-content: space-between
+    .logo_text
+        margin-right: 0px !important
+    .menu
+        margin-right: 0px !important
+    #main-menu 
+        li 
+            ul
+                transform: translate(0%, 0)!important
+                left: 0% !important
+@include max-screen(768px)
+    .header
+        flex-direction: column
+        align-items: center
+    .logo_text_email
+        display: flex
+        justify-content: center
+    .search
+        margin-left: 70px
+@include min-screen(1200px)
+.main-nav
+    padding: 0
+    +flex(row, between, null, wrap)
+    #main-menu
+        +flex(row, null, center, wrap)
+        margin: 0
+        padding: 0
+        border-radius: 0
+        border: none
+        background: none
+        box-shadow: none
+        width: auto
+        position: static
+        li
+            a
+                color: #314A60
+                font-family: Gilroy
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 21px
+                &:hover
+                    color: #314A60
+            ul
+                margin-top: 10px
+                padding-left: 26px
+                padding-right: 26px
+                padding-top: 23px
+                padding-bottom: 23px
+                background: #FFFFFF 
+                box-sizing: border-box
+                margin-top: 20px !important
+                border-radius: 15px !important
+                border: 1px solid #E8EEF2
+                &:hover
+                    border-bottom: none
+                li  
                     a
-                        &:hover
-                            color: #314A60
-                    ul
+                        font-weight: normal
+                li:hover
+                    border-bottom: none
+                    a:hover
+                        font-weight: bold
+                        text-decoration: underline
+                        color: #314A60
                         background: #FFFFFF
-                        border-bottom: 1px solid #E8EEF2
-                        box-sizing: border-box
-                        border-radius: 15px
-                        
-                    &:hover
-                        border-bottom: 3px solid red
-                        
-                    
-                        
+            &:hover
+                border-bottom: 3px solid red        
 @include max-screen(1200px)
     .main-menu-btn-icon,
     .main-menu-btn-icon:before,
