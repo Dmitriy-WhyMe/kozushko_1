@@ -295,6 +295,9 @@
                     margin-top: 20px
                     padding-left: 10px
 @include ipad(portrait)
+    .left_block_project
+        .buttons_slider
+            padding-left: 83% !important
     .fotter_container
         .left_fotter
             .nav_fotter
@@ -654,9 +657,26 @@
 
 
 @include max-screen(595px)
+    .left_sertivicate_slider
+        .slick-list
+            height: 790px !important
+    .slider_sovmest
+        align-items: center
+        @include flex_column
     .mockup_block
         .right_txt_mockup
             margin-top: 50px
+    .free_konsult
+        margin-top: 0px
+    .useful, .mockup_block, .project, .partners
+        margin-top: 20px
+    .partners
+        margin-bottom: 20px
+    .fotter_container
+        margin-top: 20px;
+    .nav_fotter
+        .main_p
+            margin-top: 20px
 @include max-screen(465px)
         .mockup_block
             .right_txt_mockup
