@@ -86,23 +86,26 @@ body
 	align-items: center
 	justify-content: center
 .slick-dots 
+	margin: 15px 0
 	li
-		background: #E0EDF5
 		border-radius: 50%
 		width: 10px
 		height: 10px
-		font-size: 5px
-		
-.slick-dots 
-	button
-
-.slick-dots 
-	.slick-active 
+		font-size: 0px
+		background: #E0EDF5
+		margin: 0 8px
 		button
-			border-radius: 50%
-			width: 10px
+			font-size: 0px
+		&.slick-active
+			transform: scale(1.1)
+			
+		.slick-dots 
+	.slick-active
+		button
+			border-radius: 11px
+			width: 49px
 			height: 10px
-			font-size: 5px
+			font-size: 0px
 			background: #44B2FC
 .slick-next
 	right: 10px
