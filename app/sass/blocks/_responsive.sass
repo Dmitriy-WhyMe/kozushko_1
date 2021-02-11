@@ -1,6 +1,9 @@
 @mixin flex_column
     flex-direction: column
 @include iphone5(portrait)
+    .left_block_project
+        .buttons_slider
+            padding-left: 0% !important
     .left_img_mockup
         .poverh_img
             .main_button
@@ -111,6 +114,9 @@
                         .advantages_block
                             text-align: center
 @include iphone6(portrait)
+    .left_block_project
+        .buttons_slider
+            padding-left: 0% !important
     .left_img_mockup
         .poverh_img
             .main_button
@@ -203,6 +209,9 @@
                     padding-left: 10px
             
 @include iphone6-plus(portrait)
+    .left_block_project
+        .buttons_slider
+            padding-left: 0% !important
     .left_img_mockup
         .poverh_img
             .main_button
@@ -289,8 +298,6 @@
     .fotter_container
         .left_fotter
             .nav_fotter
-                .flex
-                    @include flex_column
                 p
                     margin-top: 10px
             .blog_fotter
@@ -428,8 +435,17 @@
                         img
                             max-width: 80px
                             max-height: 130px
-@include max-screen(1600px)
-    .page-container    
+@include max-screen(1680px)
+    .logo_text
+        margin-right: 0px !important
+    .search 
+        margin-right: 0px !important
+    .slick-track
+        .slick-slide
+            img
+                width: 100%
+    .page-container
+        max-width: 1240px
         .container
             .about_windows
                 @include flex_column
@@ -457,21 +473,25 @@
                     max-width: 100%
                     margin-right: 0px
                 .popular_state
+                    margin-top: 10px
                     .block_state
-                        @include flex_column
-                        .block_big, .block_two
-                            margin-right: 0px
+                        justify-content: center
                         .block_big_text
                             max-width: 100%
-                        .sub_block_big
-                            margin-right: 0px
+                        .p_mn
+                            max-width: 370px
+                        .block_big
+                            max-width: 370px
+                        .block_two
+                            .sub_block_big
+                                max-width: 370px
             .useful
                 @include flex_column
                 .left_block
                     max-width: 100%
                     margin-right: 0px
                     .main_button
-                        margin-top: 0px
+                        margin-top: 20px
                         margin-bottom: 20px
                     .main_p
                         max-width: 100%
@@ -488,8 +508,11 @@
                 @include flex_column
                 .left_block_project
                     margin-bottom: 30px
+                    .main_h1
+                        max-width: 100%
                     .buttons_slider
-                        padding-left: 0px
+                        margin-top: 10px
+                        padding-left: 88%
             .partners
                 .partners_blocks
                     justify-content: center
@@ -534,8 +557,65 @@
                         .main_button
                             .img_left
                                 max-width: 20px
-
+@include max-screen(1200px)
+    .popular_state
+        margin-top: 10px
+        .block_state
+            @include flex_column
+            justify-content: center
+            .block_big_text
+                max-width: 100% !important
+            .p_mn
+                margin-right: 30px
+                display: flex
+                max-width: 100% !important
+            .block_big
+                display: flex
+                max-width: 100% !important
+            .block_two
+                .sub_block_big
+                    display: flex
+                    max-width: 100% !important
 @include max-screen(1024px)
+    .popular_state
+        margin-top: 10px
+        .block_state
+            @include flex_column
+            justify-content: center
+            .block_big_text
+                max-width: 100% !important
+            .p_mn
+                margin-right: 30px
+                display: flex
+                @include flex_column
+                margin-right: 0px
+                max-width: 100% !important
+                .img_a
+                    a
+                        width: 100%
+                        img
+                            width: 100%
+            .block_big
+                display: flex
+                @include flex_column
+                margin-right: 0px
+                max-width: 100% !important
+                .img_a
+                    a
+                        width: 100%
+                        img
+                            width: 100%
+            .block_two
+                .sub_block_big
+                    display: flex
+                    @include flex_column
+                    margin-right: 0px
+                    max-width: 100% !important
+                    .img_a
+                        a
+                            width: 100%
+                            img
+                                width: 100%
     .advantages
         @include flex_column
         .advantages_left

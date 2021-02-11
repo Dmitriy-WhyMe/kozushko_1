@@ -6,7 +6,6 @@
 			infinite: true,
 			speed: 300,
 			slidesToShow: 1,
-			adaptiveHeight: true,
 			arrows: true,
 			prevArrow: $('.arrow_prev_single'),
 			nextArrow: $('.arrow_next_single')
