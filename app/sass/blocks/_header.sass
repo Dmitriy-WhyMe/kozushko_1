@@ -17,9 +17,9 @@
 .logo_text_email
     display: flex
     margin-top: 10px
-    a
+    img
         margin-right: 13px
-    p
+    span
         font-family: Gilroy
         font-style: normal
         font-weight: 500
@@ -27,13 +27,35 @@
         line-height: 16px
         color: #314A60
 .menu
-    margin-right: 157px
+    margin-right: 127px
 .search
     margin-left: 0px
     display: flex
     align-items: center
+    position: relative
+    margin-right: 65px
+    button
+        position: absolute
+        z-index: 2
+        left: 0
+        bottom: 0
+        transform: translate(0, -50%)
+        cursor: pointer
     input
-        padding-left: 20px
+        font-family: Gilroy
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        color: #314A60
+        padding: 0 30px 0 0
+        width: 170px
+        height: 40px
+        padding-left: 25px
+        &:hover
+            border-bottom: 1px solid #314A60
+        &:focus
+            border-bottom: 1px solid #314A60
 .call
     display: flex
     flex-direction: column
