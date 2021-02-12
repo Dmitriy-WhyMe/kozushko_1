@@ -19,9 +19,10 @@
                                 left: 10px
                                 padding-right: 120px
                                 .slide_title
-                                    font-size: 12px
-                                p
-                                    font-size: 12px
+                                    font-size: 10px
+                                    margin-bottom: 5px
+                                div
+                                    font-size: 10px
             .advantages_left
                 .advantages_blocks
                     justify-content: center
@@ -131,8 +132,10 @@
                                 right: 0px
                                 left: 10px
                                 padding-right: 50px
+                                div
+                                    font-size: 12px
                                 .slide_title
-                                    font-size: 14px
+                                    font-size: 12px
             .advantages_left
                 .advantages_blocks
                     justify-content: center
@@ -227,7 +230,7 @@
                                 left: 10px
                                 padding-right: 50px
                                 .slide_title
-                                    font-size: 18px
+                                    font-size: 14px
             .about_windows
                 @include flex_column
                 .about_windows_text
@@ -438,7 +441,7 @@
                         img
                             max-width: 80px
                             max-height: 130px
-@include max-screen(1680px)
+@include max-screen(1650px)
     .logo_text
         margin-right: 0px !important
     .search 
@@ -448,8 +451,8 @@
             img
                 width: 100%
     .page-container
-        max-width: 1240px
         .container
+            max-width: 1240px
             .about_windows
                 @include flex_column
                 .about_windows_text
@@ -458,11 +461,15 @@
                     margin-top: 20px
                     padding-left: 10px
             .slider_fourblocks
-                @include flex_column
+                .slider
+                    min-width: 873px
                 .fourblocks
-                    margin-left: 0px
-                .single-item 
-                    min-width: auto
+                    margin-left: 10px
+                    a
+                        min-height: 60px
+                        div
+                            img
+                                max-height: 55px
                 .block_slider_txt
                     right: 30px
                     min-width: 400px
@@ -579,6 +586,11 @@
                 .sub_block_big
                     display: flex
                     max-width: 100% !important
+@include max-screen(1175px)
+    .slider_fourblocks
+        @include flex_column
+        .slider
+            min-width: 100% !important
 @include max-screen(1024px)
     .popular_state
         margin-top: 10px
@@ -678,6 +690,11 @@
         .main_p
             margin-top: 20px
 @include max-screen(465px)
-        .mockup_block
-            .right_txt_mockup
-                margin-top: 100px
+    .slick-slide    
+        .block_slider_txt
+            margin-top: 10px !important
+
+    .mockup_block
+        .right_txt_mockup
+            margin-top: 100px
+            
