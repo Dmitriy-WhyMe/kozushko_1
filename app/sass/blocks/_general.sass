@@ -24,7 +24,66 @@ body
 		max-width: 100%
 	+mq($max-width: 575px)
 		padding: 0 10px
-
+.white-popup 
+	position: relative
+	background: #FFF
+	padding: 20px
+	width: auto
+	max-width: 1083px
+	max-height: 478px
+	margin: 20px auto
+.project_popup
+	display: flex
+	.project_popup_left
+		max-width: 456px
+		margin-right: 40px
+		.pop_img_big
+			margin-bottom: 21px
+			img
+				width: 100%
+				max-width: 456px
+				max-height: 209px
+		.pop_img_small
+			display: flex
+			text-align: center
+			a
+				margin-right: 12px
+				margin-bottom: 20px
+				cursor: pointer
+				img
+					height: 100%
+					max-width: 144px
+					max-height: 81px
+		.no_mgbot
+			margin-bottom: 0px
+.project_popup_right_title
+	font-family: Gilroy
+	font-style: normal
+	font-weight: bold
+	font-size: 25px
+	line-height: 130%
+	color: #314A60
+	margin-bottom: 29px
+.project_popup_right_text
+	font-family: Gilroy
+	font-style: normal
+	font-weight: 500
+	font-size: 15px
+	line-height: 188.5%
+	color: #314A60
+	.deadline
+		font-family: Gilroy
+		font-style: normal
+		font-weight: bold
+		font-size: 15px
+		line-height: 188.5%
+		color: #314A60
+	.price
+		font-family: Gilroy
+		font-style: normal
+		font-weight: bold
+		font-size: 25px
+		line-height: 130%
 .heshteg
 	font-family: Gilroy
 	font-style: normal
@@ -114,4 +173,19 @@ body
 .slick-prev
 	left: 10px
 	z-index: 99
+.slider_fourblocks
+	.slider
+		position: relative
+		.arrow_prev_single
+			position: absolute
+			z-index: 99
+			top: 190px
+			left: 10px
+			cursor: pointer
+		.arrow_next_single
+			position: absolute
+			z-index: 99
+			top: 200px
+			right: 10px
+			cursor: pointer
 

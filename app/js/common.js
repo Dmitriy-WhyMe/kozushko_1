@@ -7,8 +7,8 @@
 			speed: 300,
 			slidesToShow: 1,
 			arrows: true,
-			prevArrow: $('.arrow_prev_single'),
-			nextArrow: $('.arrow_next_single')
+			prevArrow: '<div class="arrow_prev_single"><svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 14L3 8L9 2" stroke="#44B2FC" stroke-width="3"/></svg></div>',
+			nextArrow: '<div class="arrow_next_single"><svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 14L8 8L2 2" stroke="#44B2FC" stroke-width="3"/></svg></div>'
 		  });
 		$('.multiple-items').slick({
 			infinite: true,
@@ -74,7 +74,18 @@
 			  subMenusSubOffsetY: -6
 			});
 		  });
-		  
+
+		jQuery(document).ready(function($) {
+			$('.popup-content').magnificPopup({
+				type: 'inline'
+			});
+		});
+
+		
+		var img = document.getElementById("display-1")[0]; 
+		function changeIMG(str){
+		   img.setAttribute('src', str);
+		}
 		  
 		
 	});
