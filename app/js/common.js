@@ -82,10 +82,6 @@
 		});
 
 		
-		var img = document.getElementById("display-1")[0]; 
-		function changeIMG(str){
-		   img.setAttribute('src', str);
-		}
 		  
 		
 	});

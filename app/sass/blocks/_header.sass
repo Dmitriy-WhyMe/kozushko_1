@@ -4,6 +4,9 @@
     padding-bottom: 10px
     .logo
         margin-right: 13px
+        img
+            &:hover
+                opacity: 0.5
     .logo_text
         margin-right: 160px
         margin-top: 5px
@@ -20,6 +23,7 @@
     margin-top: 10px
     img
         margin-right: 13px
+        
     span
         font-family: Gilroy
         font-style: normal
@@ -90,7 +94,8 @@
         ul
             transform: translate(-50%, 0)
             left: 50% !important
-
+.main-menu-btn
+    display: none
 @include min-screen(320px)
 .main-nav
     +flex(row-reverse, between, center, wrap)
@@ -122,6 +127,13 @@
             &:before,
             &:after
                 display: none
+@include max-screen(1650px) 
+    #main-menu
+        li
+            a
+                font-size: 15px
+    .logo
+        margin-right: -45px !important
 @include max-screen(1600px)
     .header
         justify-content: space-between
@@ -168,7 +180,7 @@
                 font-family: Gilroy
                 font-style: normal
                 font-weight: 600
-                font-size: 18px
+                font-size: 15px
                 line-height: 21px
                 &:hover
                     color: #314A60
@@ -232,3 +244,19 @@
                 display: none
             .sub_menu
                 left: -40px
+@include ipad-retina(portrait)
+    .logo
+        margin-right: -105px !important
+@include ipad(portrait)
+    .logo
+        margin-right: 0px !important
+ 
+@include iphone6-plus(portrait)
+    .logo
+        margin-right: 0px !important
+@include iphone6(portrait)
+    .logo
+        margin-right: 0px !important
+@include iphone5(portrait)
+    .logo
+        margin-right: 0px !important
