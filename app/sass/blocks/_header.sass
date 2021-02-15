@@ -210,6 +210,8 @@
             &:hover
                 border-bottom: 3px solid red        
 @include max-screen(1200px)
+    .main-menu-btn
+        display: block
     .main-menu-btn-icon,
     .main-menu-btn-icon:before,
     .main-menu-btn-icon:after
@@ -244,13 +246,16 @@
                 display: none
             .sub_menu
                 left: -40px
-@include ipad-retina(portrait)
+
+@include max-screen(1024px)
     .logo
         margin-right: -105px !important
-@include ipad(portrait)
+@include max-screen(768px)
+    .header
+        justify-content: normal
     .logo
         margin-right: 0px !important
- 
+
 @include iphone6-plus(portrait)
     .logo
         margin-right: 0px !important
