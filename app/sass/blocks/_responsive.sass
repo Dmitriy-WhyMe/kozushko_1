@@ -99,9 +99,9 @@
     .right_txt_free_konsult
         padding-top: 15px !important
     .logo_text
-        margin-right: 0px !important
+        
     .search 
-        margin-right: 0px !important
+       
     .slick-track
         .slick-slide
             img
@@ -111,11 +111,6 @@
         .block_big
             margin-left: 0px
             margin-right: 30px
-    .slider_fourblocks 
-        .arrow_prev_single
-            top: 140px !important
-        .arrow_next_single
-            top: 145px !important
     .right_txt_mockup_red
         margin-top: 20px
         .number_red
@@ -241,6 +236,7 @@
                         .main_button
                             margin-left: 0px
                             .img_left
+                                max-height: 20px
                                 max-width: 20px
 @include max-screen(1200px)
     .useful
@@ -251,7 +247,7 @@
             .block_state
                 flex-wrap: wrap
     .mockup_block
-        @include flex_column
+        
     .project
         @include flex_column
     .free_konsult
@@ -280,11 +276,18 @@
             min-width: 100% !important
 @include max-screen(1024px)
     .page-container 
-        .container 
+        .container
+            .project
+                .multiple-items
+                    padding-left: 0px
+                .left_block_project 
+                    .buttons_slider
+                        padding-left: 0%
             .popular_state_main 
                 .popular_state 
                     .block_state 
                         .block_big
+                            margin-bottom: 20px
                             max-width: 49%
                         .block_two
                             max-width: 49%
@@ -292,6 +295,9 @@
                                 max-width: 100%
                         .p_mn
                             max-width: 100%
+    
+    .fourblocks
+        margin-top: 40px
     .useful
         .left_block
             max-width: 100%
@@ -396,14 +402,16 @@
 
 
 @include max-screen(1024px)
+    .left_img_mockup 
+        img
+            object-fit: cover
+            height: 400px
+        .poverh_img
+            margin-left: 0px
+            max-width: 350px
     .popular_state 
         .heshteg
             margin-bottom: 15px
-    .slider_fourblocks
-        .arrow_prev_single
-            top: 160px !important
-        .arrow_next_single
-            top: 160px !important
     .fourblocks
         margin-left: 0px !important
     .page-container    
@@ -441,11 +449,6 @@
         .block_state 
             .block_big
                 max-width: 360px
-    .slider_fourblocks
-        .arrow_prev_single
-            top: 120px !important
-        .arrow_next_single
-            top: 120px !important
     .fourblocks
         margin-left: 0px !important
     .left_block_project
@@ -524,11 +527,6 @@
                         .block_two
                             max-width: 100%
 @include iphone6-plus(portrait)
-    .slider_fourblocks
-        .arrow_prev_single
-            top: 70px !important
-        .arrow_next_single
-            top: 75px !important
     .fourblocks
         margin-left: 0px !important
     .left_block_project
@@ -617,11 +615,6 @@
                     margin-top: 20px
                     padding-left: 10px
 @include iphone6(portrait)
-    .slider_fourblocks
-        .arrow_prev_single
-            top: 55px !important
-        .arrow_next_single
-            top: 60px !important
     .fourblocks
         margin-left: 0px !important
     .left_block_project
@@ -720,11 +713,6 @@
                     margin-top: 20px
                     padding-left: 10px
 @include iphone5(portrait)
-    .slider_fourblocks
-        .arrow_prev_single
-            top: 45px !important
-        .arrow_next_single
-            top: 50px !important
     .fourblocks
         margin-left: 0px !important
     .left_block_project

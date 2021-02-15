@@ -10,6 +10,8 @@
     .logo_text
         margin-right: 250px
         margin-top: 5px
+.reverse
+    display: flex
 .logo_text_up
     font-family: Gilroy
     font-style: normal
@@ -32,7 +34,7 @@
         line-height: 16px
         color: #314A60
 .menu
-    margin-right: 152px
+    margin-right: 142px
 .search
     margin-left: 0px
     display: flex
@@ -67,6 +69,7 @@
     align-items: center
     margin-top: -20px
     .main_button
+        min-width: 162px
         padding-left: 13px
         padding-right: 13px
     a
@@ -89,7 +92,8 @@
 /* hamburger icon */
 #main-menu-state
     display: none
-#main-menu 
+#main-menu
+    transition: all .3s ease
     li 
         ul
             transform: translate(-50%, 0)
@@ -128,20 +132,27 @@
             &:after
                 display: none
 @include max-screen(1650px) 
+    .header
+        .menu
+            margin-right: 70px
+        .search
+            margin-right: 0px
+        .logo_text
+            margin-right: 50px
     #main-menu
         li
             a
                 font-size: 15px
     .logo
-        margin-right: -45px !important
+        
 @include max-screen(1600px)
     .header
-        justify-content: space-between
+        
     .logo_text
         
-        margin-right: 0px !important
+        
     .menu
-        margin-right: 0px !important
+        
     #main-menu 
         li 
             ul
@@ -153,7 +164,6 @@
                 padding-bottom: 3px !important
 @include max-screen(768px)
     .header
-        flex-direction: column
         align-items: center
     .logo_text_email
         display: flex
@@ -235,10 +245,18 @@
     #main-menu-state:not(:checked) ~ #main-menu
         display: none
     #main-menu-state:checked ~ #main-menu
-        display: block
+        flex-direction: column
+        display: flex
         width: 100%
-        min-width: 160px
+        max-width: 200px
         background: white
+        position: fixed
+        left: 0
+        top: 0
+        z-index: 999
+        margin: 0
+        height: 100vh
+        transition: all .3s ease
 @include max-screen(1920px)
     #main-menu
         li
@@ -248,8 +266,26 @@
                 left: -40px
 
 @include max-screen(1024px)
-    .logo
-        margin-right: -105px !important
+    .logo_text
+        margin-right: 15px !important
+    .menu
+        margin-right: 15px
+    #main-menu
+        
+    .reverse
+        flex-direction: row-reverse
+        justify-content: space-between
+        width: 100%
+    
+@include max-screen(414px)
+    #main-menu 
+        li 
+            ul
+                transform: translate(0, 0)
+                left: 0% !important
+    .header
+        flex-direction: column
+    
 @include max-screen(768px)
     .header
         justify-content: normal
@@ -263,5 +299,11 @@
     .logo
         margin-right: 0px !important
 @include iphone5(portrait)
+    .header
+        .menu
+            margin-right: 0px
+        .search
+            margin-right: 0px
+            margin-left: 0px
     .logo
         margin-right: 0px !important
