@@ -67,6 +67,14 @@
                         img
                             max-width: 80px
                             max-height: 130px
+@include max-screen(1024px)
+    .page-container 
+        .container 
+            .popular_state_main 
+                .popular_state 
+                    .block_state 
+                        .block_big
+                            max-width: 50%
 @include max-screen(1650px)
     .fotter_container, .project, .useful, .mockup_block, .free_konsult
         margin-top: 40px
@@ -112,6 +120,9 @@
         margin-top: 20px
         .number_red
             font-size: 80px
+    .poverh_img
+        .main_h1
+            font-size: 26px
     .page-container
         .container
             max-width: 1230px
@@ -169,9 +180,7 @@
                             .sub_block_big
                                 max-width: 370px
             .useful
-                
                 .left_block
-                    max-width: 280px
                     margin-right: 30px
                     .main_button
                         margin-top: 45px
@@ -226,8 +235,7 @@
                     .poverh_img
                         margin-top: 20px
                         right: 0
-                        .main_h1
-                            font-size: 26px
+                        
                         p
                             margin-bottom: 0px
                         .main_button
@@ -256,40 +264,49 @@
     .popular_state
         margin-top: 10px
         .block_state
-            @include flex_column
             justify-content: center
-            .block_big_text
-                max-width: 100% !important
             .p_mn
                 margin-right: 30px
                 display: flex
-                max-width: 100% !important
             .block_big
                 display: flex
-                max-width: 100% !important
             .block_two
                 .sub_block_big
                     display: flex
-                    max-width: 100% !important
 @include max-screen(1175px)
     .slider_fourblocks
         @include flex_column
         .slider
             min-width: 100% !important
 @include max-screen(1024px)
+    .page-container 
+        .container 
+            .popular_state_main 
+                .popular_state 
+                    .block_state 
+                        .block_big
+                            max-width: 49%
+                        .block_two
+                            max-width: 49%
+                            .sub_block_big
+                                max-width: 100%
+                        .p_mn
+                            max-width: 100%
+    .useful
+        .left_block
+            max-width: 100%
     .popular_state
         margin-top: 10px
         .block_state
-            @include flex_column
-            justify-content: center
-            .block_big_text
-                max-width: 100% !important
+            display: flex
+            justify-content: space-between !important
+            flex-wrap: wrap
             .p_mn
                 margin-right: 30px
                 display: flex
                 @include flex_column
                 margin-right: 0px
-                max-width: 100% !important
+                max-width: 477px
                 .img_a
                     a
                         width: 100%
@@ -299,7 +316,7 @@
                 display: flex
                 @include flex_column
                 margin-right: 0px
-                max-width: 100% !important
+                max-width: 477px
                 .img_a
                     a
                         width: 100%
@@ -310,7 +327,7 @@
                     display: flex
                     @include flex_column
                     margin-right: 0px
-                    max-width: 100% !important
+                    
                     .img_a
                         a
                             width: 100%
@@ -320,18 +337,17 @@
         @include flex_column
         .advantages_left
             .advantages_blocks
-                justify-content: space-between
+                margin-left: 15px
                 flex-wrap: wrap
                 .advantages_block
-                    margin-right: 0px
+                    margin-bottom: 15px
         .advantages_right
             .main_h1
                 max-width: 100%
                 margin-bottom: 20px
             .main_p
                 max-width: 100%
-    .useful
-        .left_block
+        .useful
             .main_p
                 max-width: 100%
         .popular_state
@@ -375,18 +391,14 @@
     .nav_fotter
         .main_p
             margin-top: 20px
-@include max-screen(465px)
-    .slick-slide    
-        .block_slider_txt
-            margin-top: 10px !important
 
-    .mockup_block
-        .right_txt_mockup
-            margin-top: 100px
             
 
 
 @include max-screen(1024px)
+    .popular_state 
+        .heshteg
+            margin-bottom: 15px
     .slider_fourblocks
         .arrow_prev_single
             top: 160px !important
@@ -422,6 +434,13 @@
                             span
                                 top: 0
 @include max-screen(768px)
+    .left_img_mockup 
+        .poverh_img
+            margin-left: 350px
+    .popular_state 
+        .block_state 
+            .block_big
+                max-width: 360px
     .slider_fourblocks
         .arrow_prev_single
             top: 120px !important
@@ -478,6 +497,32 @@
                 .about_windows_media
                     margin-top: 20px
                     padding-left: 10px
+@include max-screen(465px)
+    .slick-slide    
+        .block_slider_txt
+            margin-top: 10px !important
+    .mockup_block
+        .right_txt_mockup
+            margin-top: 100px
+    .popular_state 
+        .block_state 
+            .block_big
+                max-width: 100%
+    .left_img_mockup 
+        .poverh_img
+            margin-left: 10px
+            .main_h1
+                font-size: 20px
+    .page-container 
+        .container 
+            .popular_state_main 
+                .popular_state 
+                    .block_state
+                        @include flex_column
+                        .block_big
+                            max-width: 100%
+                        .block_two
+                            max-width: 100%
 @include iphone6-plus(portrait)
     .slider_fourblocks
         .arrow_prev_single
@@ -795,5 +840,3 @@
                         justify-content: center
                         .advantages_block
                             text-align: center
-
-            
