@@ -393,8 +393,7 @@
             .block_big
                 max-width: 48%
 @include max-screen(765px)
-    .header
-        flex-direction: column
+    
 @include max-screen(595px)
     .multiple-items 
         .block_big
@@ -527,6 +526,13 @@
                     margin-top: 20px
                     padding-left: 10px
 @include max-screen(465px)
+    .partners_blocks
+        justify-content: space-between
+    .partners_blocks a
+        max-width: 190px
+        margin-right: 0px
+    .partners_blocks a img
+        max-width: 160px
     .mockup_block
         flex-direction: column
     .slick-slide    
@@ -551,7 +557,7 @@
                             max-width: 100%
                         .block_two
                             max-width: 100%
-@include iphone6-plus(portrait)
+@include max-screen(414px)
     .slider_fourblocks
         .slider 
             .slick-dots
@@ -643,7 +649,9 @@
                 .about_windows_media
                     margin-top: 20px
                     padding-left: 10px
-@include iphone6(portrait)
+@include max-screen(375px)
+    .partners_blocks a
+        max-width: 170px
     .slider_fourblocks
         .slider 
             .slick-dots
@@ -687,11 +695,7 @@
                 .about_windows_media
                     margin-top: 20px
                     padding-left: 10px
-            .popular_state_main
-                .meta_teg
-                    .main_button
-                        padding-left: 106px
-                        padding-right: 126px
+
             .fotter_container
                 .left_fotter
                     .nav_fotter
@@ -714,11 +718,6 @@
                                             text-align: center
                                             margin-top: 0px
                                             margin-left: 0px
-            .useful
-                .left_block
-                    .main_button
-                        padding-left: 87px
-                        padding-right: 107px
             .block_state
                 .block_big
                     max-height: 100%
@@ -745,7 +744,15 @@
                 .about_windows_media
                     margin-top: 20px
                     padding-left: 10px
-@include iphone5(portrait)
+@include max-screen(320px)
+    .left_sertivicate_slider 
+        .slick-list
+            height: 850px !important
+            max-height: 850px !important
+    .partners_blocks a
+        max-width: 145px
+    .partners_blocks a img
+        max-width: 130px
     .slider_fourblocks
         .slider 
             .slick-dots
@@ -800,9 +807,7 @@
                         display: flex
                         flex-wrap: wrap
                         justify-content: center
-                    .main_button
-                        padding-left: 78px
-                        padding-right: 98px
+
             .fotter_container
                 .left_fotter
                     .nav_fotter
@@ -828,11 +833,6 @@
                                             margin-top: 0px
                                             margin-left: 0px
                                             font-size: 10px
-            .useful
-                .left_block
-                    .main_button
-                        padding-left: 65px
-                        padding-right: 85px
             .block_state
                 .block_big
                     max-height: 100%

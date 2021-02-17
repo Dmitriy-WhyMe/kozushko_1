@@ -10,6 +10,8 @@
     .logo_text
         margin-right: 250px
         margin-top: 5px
+.header_logo
+    display: flex
 .reverse
     display: flex
 .logo_text_up
@@ -133,8 +135,15 @@
             &:after
                 display: none
 @include max-screen(440px)
+    .header_logo
+        justify-content: center
+        width: 100%
+    .call
+        width: 100%
     .header
         .reverse 
+            width: 100%
+            margin-left: -20px
             justify-content: center
 @include max-screen(1650px) 
     .header
@@ -317,19 +326,15 @@
         min-width: 100px
         text-align: center
 @include max-screen(414px)
-    .header
-        .reverse
-            margin-left: -50px
-    .logo_text_email
-        justify-content: center
     #main-menu 
         li 
             ul
                 transform: translate(0, 0)
                 left: 0% !important
     .header
-        flex-direction: column
+        flex-wrap: wrap
 @include max-screen(320px)
+    
     .header
         .reverse
             margin-left: 0px
@@ -355,13 +360,16 @@
     .logo
         margin-right: 0px !important
 
-@include iphone6-plus(portrait)
+@include max-screen(414px)
     .logo
         margin-right: 0px !important
 @include iphone6(portrait)
     .logo
         margin-right: 0px !important
-@include iphone5(portrait)
+@include max-screen(320px)
+    .header 
+        .logo_text
+            margin-right: 0px
     .header
         .menu
             margin-right: 0px
