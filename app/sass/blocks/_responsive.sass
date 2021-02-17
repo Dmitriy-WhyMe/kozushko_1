@@ -68,11 +68,9 @@
                             max-width: 80px
                             max-height: 130px
 @include max-screen(1024px)
-            .popular_state_main 
-                .popular_state 
-                    .block_state 
-                        .block_big
-                            max-width: 50%
+    .block_state 
+        .block_big
+            max-width: 50%
 @include max-screen(1650px)
     .fotter_container, .project, .useful, .mockup_block, .free_konsult
         margin-top: 40px
@@ -144,6 +142,16 @@
                     .sub_block_big
                         max-width: 370px
                         .block_big_text
+    .project
+        .left_block_project
+            margin-bottom: 30px
+            min-width: 260px
+            .main_h1
+                font-size: 20px
+                max-width: 100%
+            .buttons_slider
+                margin-top: 10px
+                padding-left: 55%
                             
     .page-container
         .container
@@ -201,7 +209,7 @@
                         max-width: 100%
                     .buttons_slider
                         margin-top: 10px
-                        padding-left: 55%
+                      
             .partners
                 .partners_blocks
                     flex-wrap: wrap
@@ -379,7 +387,11 @@
             .meta_fotter
                 margin-top: 0px
 
-
+@include max-screen(834px)
+    .popular_state 
+        .block_state 
+            .block_big
+                max-width: 48%
 @include max-screen(595px)
     .left_sertivicate_slider
         .slick-list
@@ -447,9 +459,13 @@
                             span
                                 top: 0
 @include max-screen(768px)
+    .slider_fourblocks 
+        .slider div 
+            .block_slider_txt
+                margin-top: 50px
     .left_img_mockup 
         .poverh_img
-            margin-left: 350px
+            margin-left: 170px
     .popular_state 
         .block_state 
             .block_big
@@ -506,12 +522,11 @@
                     margin-top: 20px
                     padding-left: 10px
 @include max-screen(465px)
+    .mockup_block
+        flex-direction: column
     .slick-slide    
         .block_slider_txt
             margin-top: 10px !important
-    .mockup_block
-        .right_txt_mockup
-            margin-top: 100px
     .popular_state 
         .block_state 
             .block_big

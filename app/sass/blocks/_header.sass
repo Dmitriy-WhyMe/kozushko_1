@@ -164,7 +164,6 @@
         align-items: center
     .logo_text_email
         display: flex
-        justify-content: center
     .search
         margin-left: 70px
     
@@ -277,18 +276,19 @@
                 left: -40px
 
 @include max-screen(1024px)
-    .logo_text
-        margin-right: 15px !important
+    .header
+        .logo_text
+            margin-right: 15px
     .menu
         margin-right: 15px
-    #main-menu
-        
     .reverse
         flex-direction: row-reverse
         justify-content: space-between
         width: 50%
     .sm-clean ul
         position: static
+    #main-menu li
+        width: 100%
     #main-menu li ul
         transform: translate(0%, 0)
         left: 0% !important
@@ -317,6 +317,11 @@
         min-width: 100px
         text-align: center
 @include max-screen(414px)
+    .header
+        .reverse
+            margin-left: -50px
+    .logo_text_email
+        justify-content: center
     #main-menu 
         li 
             ul
@@ -324,10 +329,25 @@
                 left: 0% !important
     .header
         flex-direction: column
-    
+@include max-screen(834px)
+    .reverse
+        width: 35%
+        margin-left: 25px
+    .header 
+        .menu
+            margin-right: 15px
 @include max-screen(768px)
+    .reverse
+        width: 35%
+        margin-left: 5px
+    .header 
+        .menu
+            margin-right: 15px
     .header
         justify-content: normal
+    .header
+        .logo_text
+            margin-right: 15px
     .logo
         margin-right: 0px !important
 
