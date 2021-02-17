@@ -329,6 +329,10 @@
                 left: 0% !important
     .header
         flex-direction: column
+@include max-screen(320px)
+    .header
+        .reverse
+            margin-left: 0px
 @include max-screen(834px)
     .reverse
         width: 35%
