@@ -392,7 +392,15 @@
         .block_state 
             .block_big
                 max-width: 48%
+@include max-screen(765px)
+    .header
+        flex-direction: column
 @include max-screen(595px)
+    .multiple-items 
+        .block_big
+            margin-right: 0px
+    .advantages_block
+        margin-right: 0px
     .left_sertivicate_slider
         .slick-list
             height: 790px !important
@@ -410,7 +418,7 @@
     .partners
         margin-bottom: 20px
     .fotter_container
-        margin-top: 20px;
+        margin-top: 20px
     .nav_fotter
         .main_p
             margin-top: 20px
