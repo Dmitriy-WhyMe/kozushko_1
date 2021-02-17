@@ -64,6 +64,7 @@
         &:focus
             border-bottom: 1px solid #314A60
 .call
+    margin-left: 10px
     display: flex
     flex-direction: column
     align-items: center
@@ -131,6 +132,10 @@
             &:before,
             &:after
                 display: none
+@include max-screen(440px)
+    .header
+        .reverse 
+            justify-content: center
 @include max-screen(1650px) 
     .header
         .menu
@@ -143,17 +148,7 @@
         li
             a
                 font-size: 15px
-    .logo
-        
 @include max-screen(1600px)
-    .header
-        
-    .logo_text
-        
-        
-    .menu
-        
-    #main-menu 
         li 
             ul
                 transform: translate(-50%, 0)
@@ -163,6 +158,8 @@
                 padding-top: 3px !important
                 padding-bottom: 3px !important
 @include max-screen(768px)
+    .call
+        margin-left: 0px
     .header
         align-items: center
     .logo_text_email
@@ -170,6 +167,7 @@
         justify-content: center
     .search
         margin-left: 70px
+    
 @include min-screen(1200px)
 .main-nav
     padding: 0
@@ -257,6 +255,19 @@
         margin: 0
         height: 100vh
         transition: all .3s ease
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon
+        height: 0
+        background: transparent
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before
+        transform: rotate(-45deg)
+        top: 0
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after 
+        top: 0
+        transform: rotate(45deg)
+@media (min-width: 768px)
+    .sm-clean a.has-submenu 
+        padding-right: 15px
+    
 @include max-screen(1920px)
     #main-menu
         li
@@ -275,8 +286,36 @@
     .reverse
         flex-direction: row-reverse
         justify-content: space-between
-        width: 100%
-    
+        width: 50%
+    .sm-clean ul
+        position: static
+    #main-menu li ul
+        transform: translate(0%, 0)
+        left: 0% !important
+        margin-top: 0px !important
+    #main-menu li a[aria-expanded="true"]
+        text-align: center
+    #main-menu li .sub-arrow
+        display: block
+        width: 20px
+        height: 20px
+        top: 50%
+        right: 0px
+        transform: translate(0, -50%)
+        border: 1px solid #333333
+        position: absolute
+        margin: 0
+        z-index: 2
+    #main-menu li .sub-arrow:before
+        content: '+'
+        display: block
+        font-size: 15px
+        line-height: 18px
+    #main-menu a.has-submenu[aria-expanded="true"] .sub-arrow:before
+        content: '-'
+    #main-menu li a
+        min-width: 100px
+        text-align: center
 @include max-screen(414px)
     #main-menu 
         li 

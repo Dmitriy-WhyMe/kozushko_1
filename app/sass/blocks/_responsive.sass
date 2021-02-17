@@ -68,8 +68,6 @@
                             max-width: 80px
                             max-height: 130px
 @include max-screen(1024px)
-    .page-container 
-        .container 
             .popular_state_main 
                 .popular_state 
                     .block_state 
@@ -118,6 +116,35 @@
     .poverh_img
         .main_h1
             font-size: 26px
+    .popular_state_main
+        flex-direction: column-reverse
+        .meta_teg
+            max-width: 100%
+            margin-right: 0px
+        .popular_state
+            margin-top: 10px
+            .block_state
+                justify-content: center
+                .block_big_text
+                    max-width: 100%
+                .p_mn
+                    max-width: 33.3%
+                .block_big
+                    max-width: 33.3%
+                    .img_a
+                        span
+                            top: 0
+                        a
+                            display: block
+                            img
+                                display: block
+                                max-width: 100%
+                                width: 100%
+                .block_two
+                    .sub_block_big
+                        max-width: 370px
+                        .block_big_text
+                            
     .page-container
         .container
             max-width: 1230px
@@ -134,8 +161,9 @@
                 .fourblocks
                     margin-left: 10px
                     a
-                        min-height: 60px
+                        min-height: 65px
                         img
+                            max-width: 61px
                             max-height: 55px
                 .block_slider_txt
                     right: 30px
@@ -146,34 +174,7 @@
                     margin-left: 0px
                 .main_h1
                     font-size: 26px
-            .popular_state_main
-                flex-direction: column-reverse
-                .meta_teg
-                    max-width: 100%
-                    margin-right: 0px
-                .popular_state
-                    margin-top: 10px
-                    .block_state
-                        justify-content: center
-                        .block_big_text
-                            max-width: 100%
-                        .p_mn
-                            max-width: 33.3%
-
-                        .block_big
-                            max-width: 33.3%
-                            .img_a
-                                span
-                                    top: 0
-                                a
-                                    display: block
-                                    img
-                                        display: block
-                                        max-width: 100%
-                                        width: 100%
-                        .block_two
-                            .sub_block_big
-                                max-width: 370px
+            
             .useful
                 .left_block
                     margin-right: 30px
@@ -275,26 +276,30 @@
         .slider
             min-width: 100% !important
 @include max-screen(1024px)
-    .page-container 
-        .container
-            .project
-                .multiple-items
-                    padding-left: 0px
-                .left_block_project 
-                    .buttons_slider
-                        padding-left: 0%
-            .popular_state_main 
-                .popular_state 
-                    .block_state 
-                        .block_big
-                            margin-bottom: 20px
-                            max-width: 49%
-                        .block_two
-                            max-width: 49%
-                            .sub_block_big
-                                max-width: 100%
-                        .p_mn
-                            max-width: 100%
+    .popular_state_main 
+        .block_state 
+            .block_two 
+                .sub_block_big 
+                    .block_big_text
+                        max-width: 100%
+    .project
+        .multiple-items
+            padding-left: 0px
+        .left_block_project 
+            .buttons_slider
+                padding-left: 0%
+    .popular_state_main 
+        .popular_state 
+            .block_state 
+                .block_big
+                    margin-bottom: 20px
+                    max-width: 49%
+                .block_two
+                    max-width: 49%
+                    .sub_block_big
+                        max-width: 100%
+                .p_mn
+                    max-width: 100%
     
     .fourblocks
         margin-top: 40px
